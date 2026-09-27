@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aera — Support</title>
+<meta name="description" content="Help with Aera: purchases, subscriptions, moving data and widgets.">
+<style>
+:root {
+  --bg: #ffffff; --ink: #1d1d1f; --muted: #6e6e73; --line: #d2d2d7;
+  --accent: #0071e3; --chip: #f5f5f7; --chip-on: #1d1d1f; --chip-on-ink: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000; --ink: #f5f5f7; --muted: #a1a1a6; --line: #424245;
+    --accent: #2997ff; --chip: #1d1d1f; --chip-on: #f5f5f7; --chip-on-ink: #000000;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue",
+        "Hiragino Sans", "Noto Sans JP", Arial, sans-serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 28px 16px 72px; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; }
+nav button {
+  font: inherit; font-size: 14px; border: 0; border-radius: 980px;
+  padding: 6px 14px; background: var(--chip); color: var(--ink); cursor: pointer;
+}
+nav button[aria-pressed="true"] { background: var(--chip-on); color: var(--chip-on-ink); }
+nav button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1 { font-size: clamp(28px, 6vw, 44px); line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 12px;
+      hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; }
+.updated { color: var(--muted); font-size: 15px; margin: 0 0 28px; }
+.lead { font-size: 21px; line-height: 1.45; margin: 0 0 40px; }
+section { border-top: 1px solid var(--line); padding-top: 22px; margin-top: 22px; }
+h2 { font-size: 21px; letter-spacing: -0.01em; margin: 0 0 8px; }
+p { margin: 0 0 12px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Language">
+<button type="button" data-set-lang="ru" lang="ru">Русский</button>
+<button type="button" data-set-lang="en" lang="en">English</button>
+<button type="button" data-set-lang="es" lang="es">Español</button>
+<button type="button" data-set-lang="pt-BR" lang="pt-BR">Português</button>
+<button type="button" data-set-lang="de" lang="de">Deutsch</button>
+<button type="button" data-set-lang="fr" lang="fr">Français</button>
+<button type="button" data-set-lang="it" lang="it">Italiano</button>
+<button type="button" data-set-lang="ja" lang="ja">日本語</button>
+</nav>
+<article lang="ru" data-lang="ru" hidden>
+<h1>Поддержка Aera</h1>
+<p class="lead">Есть вопрос, нашли ошибку или хотите что-то предложить — напишите на <a href="mailto:shipulya.gv@gmail.com">shipulya.gv@gmail.com</a>. Ниже ответы на частые вопросы.</p>
+<section><h2>Как восстановить покупку Aera Pro?</h2>
+<p>Откройте в Aera Настройки и нажмите «Восстановить покупки» под карточкой Aera Pro. Войдите в App Store с тем же Apple ID, с которого оформляли покупку.</p>
+</section>
+<section><h2>Как отменить подписку?</h2>
+<p>Подписками управляет Apple: откройте Настройки iPhone → ваше имя → Подписки → Aera. Отменить можно в любой момент, Aera Pro останется доступна до конца оплаченного периода.</p>
+</section>
+<section><h2>Как перенести данные на новый iPhone?</h2>
+<p>В Aera откройте Настройки → Данные и резервные копии → «Экспорт резервной копии» и сохраните файл в «Файлы» или iCloud Drive. На новом iPhone выберите там же «Восстановить из копии». Данные Aera переносятся и вместе с резервной копией всего iPhone.</p>
+</section>
+<section><h2>Виджет не обновляется или пишет «Aera Pro»</h2>
+<p>Виджеты входят в Aera Pro. Откройте Aera, чтобы виджеты получили свежие данные. Если виджет по-прежнему показывает старое, удалите его с экрана «Домой» и добавьте заново.</p>
+</section>
+<section><h2>Конфиденциальность</h2>
+<p>Aera не собирает данные: всё хранится только на вашем устройстве. Подробнее — в документе <a href="./?lang=ru">Политика конфиденциальности</a>.</p>
+</section>
+</article>
+<article lang="en" data-lang="en">
+<h1>Aera Support</h1>
+<p class="lead">Have a question, found a bug or want to suggest something? Write to <a href="mailto:shipulya.gv@gmail.com">shipulya.gv@gmail.com</a>. Answers to common questions are below.</p>
+<section><h2>How do I restore my Aera Pro purchase?</h2>
+<p>Open Settings in Aera and tap “Restore Purchases” below the Aera Pro card. Make sure you’re signed in to the App Store with the Apple ID you used for the purchase.</p>
+</section>
+<section><h2>How do I cancel my subscription?</h2>
+<p>Subscriptions are managed by Apple: open iPhone Settings → your name → Subscriptions → Aera. You can cancel at any time; Aera Pro stays available until the end of the paid period.</p>
+</section>
+<section><h2>How do I move my data to a new iPhone?</h2>
+<p>In Aera, open Settings → Data &amp; Backups → “Export Backup” and save the file to Files or iCloud Drive. On the new iPhone, choose “Restore from Backup” in the same place. Aera data is also moved along with a full iPhone backup.</p>
+</section>
+<section><h2>A widget doesn’t update or shows “Aera Pro”</h2>
+<p>Widgets are part of Aera Pro. Open Aera so the widgets get fresh data. If a widget still shows old information, remove it from the Home Screen and add it again.</p>
+</section>
+<section><h2>Privacy</h2>
+<p>Aera doesn’t collect data: everything stays on your device. See the <a href="./?lang=en">Privacy Policy</a> for details.</p>
+</section>
+</article>
+<article lang="es" data-lang="es" hidden>
+<h1>Soporte de Aera</h1>
+<p class="lead">¿Tienes una pregunta, has encontrado un error o quieres proponer algo? Escribe a <a href="mailto:shipulya.gv@gmail.com">shipulya.gv@gmail.com</a>. Abajo tienes las respuestas a las dudas frecuentes.</p>
+<section><h2>¿Cómo restauro mi compra de Aera Pro?</h2>
+<p>Abre Ajustes en Aera y toca «Restaurar compras» debajo de la tarjeta de Aera Pro. Inicia sesión en el App Store con el mismo Apple ID con el que hiciste la compra.</p>
+</section>
+<section><h2>¿Cómo cancelo la suscripción?</h2>
+<p>Las suscripciones las gestiona Apple: abre Ajustes del iPhone → tu nombre → Suscripciones → Aera. Puedes cancelarla cuando quieras; Aera Pro seguirá disponible hasta el final del periodo pagado.</p>
+</section>
+<section><h2>¿Cómo paso mis datos a un iPhone nuevo?</h2>
+<p>En Aera, abre Ajustes → Datos y copias → «Exportar copia de seguridad» y guarda el archivo en Archivos o iCloud Drive. En el iPhone nuevo, elige «Restaurar copia de seguridad» en el mismo lugar. Los datos de Aera también se transfieren con la copia de seguridad completa del iPhone.</p>
+</section>
+<section><h2>Un widget no se actualiza o muestra «Aera Pro»</h2>
+<p>Los widgets forman parte de Aera Pro. Abre Aera para que los widgets reciban datos nuevos. Si un widget sigue mostrando información antigua, quítalo de la pantalla de inicio y vuelve a añadirlo.</p>
+</section>
+<section><h2>Privacidad</h2>
+<p>Aera no recopila datos: todo se guarda solo en tu dispositivo. Más detalles en la <a href="./?lang=es">Política de privacidad</a>.</p>
+</section>
+</article>
+<article lang="pt-BR" data-lang="pt-BR" hidden>
+<h1>Suporte do Aera</h1>
+<p class="lead">Tem uma dúvida, encontrou um erro ou quer sugerir algo? Escreva para <a href="mailto:shipulya.gv@gmail.com">shipulya.gv@gmail.com</a>. Abaixo estão as respostas às perguntas frequentes.</p>
+<section><h2>Como restaurar minha compra do Aera Pro?</h2>
+<p>Abra os Ajustes no Aera e toque em “Restaurar compras” abaixo do cartão do Aera Pro. Entre na App Store com o mesmo Apple ID usado na compra.</p>
+</section>
+<section><h2>Como cancelar a assinatura?</h2>
+<p>As assinaturas são gerenciadas pela Apple: abra Ajustes do iPhone → seu nome → Assinaturas → Aera. Você pode cancelar a qualquer momento; o Aera Pro continua disponível até o fim do período pago.</p>
+</section>
+<section><h2>Como passar meus dados para um novo iPhone?</h2>
+<p>No Aera, abra Ajustes → Dados e backups → “Exportar backup” e salve o arquivo no Arquivos ou no iCloud Drive. No novo iPhone, escolha “Restaurar backup” no mesmo lugar. Os dados do Aera também são transferidos com o backup completo do iPhone.</p>
+</section>
+<section><h2>O widget não atualiza ou mostra “Aera Pro”</h2>
+<p>Os widgets fazem parte do Aera Pro. Abra o Aera para que os widgets recebam dados atualizados. Se o widget continuar mostrando informações antigas, remova-o da Tela de Início e adicione de novo.</p>
+</section>
+<section><h2>Privacidade</h2>
+<p>O Aera não coleta dados: tudo fica só no seu aparelho. Mais detalhes na <a href="./?lang=pt-BR">Política de privacidade</a>.</p>
+</section>
+</article>
+<article lang="de" data-lang="de" hidden>
+<h1>Aera Support</h1>
+<p class="lead">Du hast eine Frage, einen Fehler gefunden oder einen Vorschlag? Schreib an <a href="mailto:shipulya.gv@gmail.com">shipulya.gv@gmail.com</a>. Antworten auf häufige Fragen findest du unten.</p>
+<section><h2>Wie stelle ich meinen Kauf von Aera Pro wieder her?</h2>
+<p>Öffne in Aera die Einstellungen und tippe unter der Aera Pro-Karte auf „Käufe wiederherstellen“. Melde dich im App Store mit der Apple-ID an, mit der du gekauft hast.</p>
+</section>
+<section><h2>Wie kündige ich mein Abo?</h2>
+<p>Abos verwaltet Apple: Öffne die iPhone-Einstellungen → dein Name → Abonnements → Aera. Du kannst jederzeit kündigen; Aera Pro bleibt bis zum Ende des bezahlten Zeitraums verfügbar.</p>
+</section>
+<section><h2>Wie übertrage ich meine Daten auf ein neues iPhone?</h2>
+<p>Öffne in Aera Einstellungen → Daten &amp; Backups → „Backup exportieren“ und sichere die Datei in „Dateien“ oder iCloud Drive. Wähle auf dem neuen iPhone an derselben Stelle „Aus Backup wiederherstellen“. Die Daten von Aera werden auch mit einem vollständigen iPhone-Backup übertragen.</p>
+</section>
+<section><h2>Ein Widget aktualisiert sich nicht oder zeigt „Aera Pro“</h2>
+<p>Widgets sind Teil von Aera Pro. Öffne Aera, damit die Widgets neue Daten erhalten. Zeigt ein Widget weiterhin alte Informationen, entferne es vom Home-Bildschirm und füge es erneut hinzu.</p>
+</section>
+<section><h2>Datenschutz</h2>
+<p>Aera erhebt keine Daten: Alles bleibt auf deinem Gerät. Mehr dazu in der <a href="./?lang=de">Datenschutzerklärung</a>.</p>
+</section>
+</article>
+<article lang="fr" data-lang="fr" hidden>
+<h1>Assistance Aera</h1>
+<p class="lead">Une question, un bug ou une suggestion ? Écrivez à <a href="mailto:shipulya.gv@gmail.com">shipulya.gv@gmail.com</a>. Vous trouverez ci-dessous les réponses aux questions fréquentes.</p>
+<section><h2>Comment restaurer mon achat Aera Pro ?</h2>
+<p>Ouvrez les Réglages d’Aera et touchez « Restaurer les achats » sous la carte Aera Pro. Connectez-vous à l’App Store avec l’identifiant Apple utilisé pour l’achat.</p>
+</section>
+<section><h2>Comment résilier mon abonnement ?</h2>
+<p>Les abonnements sont gérés par Apple : ouvrez Réglages de l’iPhone → votre nom → Abonnements → Aera. Vous pouvez résilier à tout moment ; Aera Pro reste disponible jusqu’à la fin de la période payée.</p>
+</section>
+<section><h2>Comment transférer mes données vers un nouvel iPhone ?</h2>
+<p>Dans Aera, ouvrez Réglages → Données et sauvegardes → « Exporter une sauvegarde » et enregistrez le fichier dans Fichiers ou iCloud Drive. Sur le nouvel iPhone, choisissez « Restaurer une sauvegarde » au même endroit. Les données d’Aera sont aussi transférées avec une sauvegarde complète de l’iPhone.</p>
+</section>
+<section><h2>Un widget ne se met pas à jour ou affiche « Aera Pro »</h2>
+<p>Les widgets font partie d’Aera Pro. Ouvrez Aera pour que les widgets reçoivent des données à jour. Si un widget affiche encore d’anciennes informations, retirez-le de l’écran d’accueil et ajoutez-le de nouveau.</p>
+</section>
+<section><h2>Confidentialité</h2>
+<p>Aera ne collecte aucune donnée : tout reste sur votre appareil. Plus de détails dans la <a href="./?lang=fr">Politique de confidentialité</a>.</p>
+</section>
+</article>
+<article lang="it" data-lang="it" hidden>
+<h1>Assistenza Aera</h1>
+<p class="lead">Hai una domanda, hai trovato un errore o vuoi proporre qualcosa? Scrivi a <a href="mailto:shipulya.gv@gmail.com">shipulya.gv@gmail.com</a>. Qui sotto trovi le risposte alle domande frequenti.</p>
+<section><h2>Come ripristino l’acquisto di Aera Pro?</h2>
+<p>Apri le Impostazioni di Aera e tocca «Ripristina acquisti» sotto la scheda Aera Pro. Accedi all’App Store con lo stesso ID Apple usato per l’acquisto.</p>
+</section>
+<section><h2>Come disdico l’abbonamento?</h2>
+<p>Gli abbonamenti sono gestiti da Apple: apri Impostazioni dell’iPhone → il tuo nome → Abbonamenti → Aera. Puoi disdire in qualsiasi momento; Aera Pro resta disponibile fino alla fine del periodo pagato.</p>
+</section>
+<section><h2>Come trasferisco i dati su un nuovo iPhone?</h2>
+<p>In Aera apri Impostazioni → Dati e backup → «Esporta backup» e salva il file in File o iCloud Drive. Sul nuovo iPhone scegli «Ripristina da backup» nello stesso punto. I dati di Aera vengono trasferiti anche con il backup completo dell’iPhone.</p>
+</section>
+<section><h2>Un widget non si aggiorna o mostra «Aera Pro»</h2>
+<p>I widget fanno parte di Aera Pro. Apri Aera perché i widget ricevano dati aggiornati. Se un widget mostra ancora informazioni vecchie, rimuovilo dalla schermata Home e aggiungilo di nuovo.</p>
+</section>
+<section><h2>Privacy</h2>
+<p>Aera non raccoglie dati: tutto resta sul tuo dispositivo. Maggiori dettagli nell’<a href="./?lang=it">Informativa sulla privacy</a>.</p>
+</section>
+</article>
+<article lang="ja" data-lang="ja" hidden>
+<h1>Aera サポート</h1>
+<p class="lead">ご質問、不具合のご報告、ご提案は<a href="mailto:shipulya.gv@gmail.com">shipulya.gv@gmail.com</a>までお送りください。よくある質問への回答は以下のとおりです。</p>
+<section><h2>Aera Proの購入を復元するには？</h2>
+<p>Aeraの設定を開き、Aera Proカードの下にある「購入を復元」をタップします。購入時と同じApple IDでApp Storeにサインインしてください。</p>
+</section>
+<section><h2>サブスクリプションを解約するには？</h2>
+<p>サブスクリプションはAppleが管理しています。iPhoneの設定 → ユーザ名 → サブスクリプション → Aeraを開いてください。いつでも解約でき、支払い済みの期間が終わるまでAera Proを利用できます。</p>
+</section>
+<section><h2>新しいiPhoneにデータを移すには？</h2>
+<p>Aeraで設定 → データとバックアップ → 「バックアップを書き出す」を開き、ファイルを「ファイル」またはiCloud Driveに保存します。新しいiPhoneでは同じ場所で「バックアップから復元」を選びます。iPhone全体のバックアップでもAeraのデータは移行されます。</p>
+</section>
+<section><h2>ウィジェットが更新されない・「Aera Pro」と表示される</h2>
+<p>ウィジェットはAera Proの機能です。Aeraを開くと、ウィジェットに最新のデータが反映されます。古い情報のままの場合は、ホーム画面からウィジェットを削除して、もう一度追加してください。</p>
+</section>
+<section><h2>プライバシー</h2>
+<p>Aeraはデータを収集しません。すべてのデータはお使いのデバイスにのみ保存されます。詳しくは<a href="./?lang=ja">プライバシーポリシー</a>をご覧ください。</p>
+</section>
+</article>
+</main>
+<script>
+(function () {
+  var codes = ['ru', 'en', 'es', 'pt-BR', 'de', 'fr', 'it', 'ja'];
+  var labels = {'ru': 'Язык', 'en': 'Language', 'es': 'Idioma', 'pt-BR': 'Idioma', 'de': 'Sprache', 'fr': 'Langue', 'it': 'Lingua', 'ja': '言語'};
+  function pick(raw) {
+    if (!raw) return null;
+    raw = raw.toLowerCase();
+    for (var i = 0; i < codes.length; i++) {
+      var c = codes[i].toLowerCase();
+      if (raw === c || raw.split("-")[0] === c.split("-")[0]) return codes[i];
+    }
+    return null;
+  }
+  function show(code) {
+    document.querySelectorAll("article").forEach(function (a) {
+      a.hidden = a.getAttribute("data-lang") !== code;
+    });
+    document.querySelectorAll("nav button").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-set-lang") === code));
+    });
+    document.documentElement.lang = code;
+    document.querySelector("nav").setAttribute("aria-label", labels[code] || "Language");
+    var h = document.querySelector('article[data-lang="' + code + '"] h1');
+    if (h) document.title = h.textContent;
+  }
+  var q = new URLSearchParams(location.search).get("lang");
+  var langs = navigator.languages || [navigator.language];
+  var start = pick(q);
+  for (var i = 0; !start && i < langs.length; i++) start = pick(langs[i]);
+  show(start || "en");
+  document.querySelectorAll("nav button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var code = b.getAttribute("data-set-lang");
+      show(code);
+      var url = new URL(location.href);
+      url.searchParams.set("lang", code);
+      history.replaceState(null, "", url);
+    });
+  });
+})();
+</script>
+</body>
+</html>
