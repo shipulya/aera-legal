@@ -45,7 +45,7 @@ T = {
  "sections": [
   ("Какие данные хранит приложение", ["Кошельки, операции, категории, бюджеты, цели, долги, списки покупок, шаблоны, прикреплённые фото чеков и настройки. Всё это хранится только на вашем устройстве, в защищённом хранилище приложения. Эти данные доступны самой Aera, её виджетам и командам Siri на этом устройстве — и больше никому."]),
   ("Что мы собираем", ["Ничего. В Aera нет аналитики, рекламы, отслеживания, отчётов о сбоях и сторонних SDK. Приложение не подключается к интернету, кроме покупок через App Store, которые обрабатывает Apple."]),
-  ("Face ID и PIN-код", ["Face ID и Touch ID обрабатывает iOS: приложение получает только ответ «подтверждено» или «нет» и никогда не видит биометрические данные. PIN-код хранится на устройстве в виде хеша, а не открытым текстом."]),
+  ("Face ID и PIN-код", ["Face ID и Touch ID обрабатывает iOS: приложение получает только ответ «подтверждено» или «нет» и никогда не видит биометрические данные. PIN-код не хранится в открытом виде: на устройстве, в защищённой Связке ключей iOS, лежит только его стойкий хеш с солью. В резервные копии он не попадает."]),
   ("Фотографии", ["Aera получает только те фото чеков, которые вы сами выберете в системном окне выбора. Они хранятся внутри приложения и никуда не отправляются."]),
   ("Уведомления", ["Напоминания и сводки — локальные уведомления: они создаются и показываются на устройстве, без серверов push-уведомлений."]),
   ("Покупки Aera Pro", ["Подписку и покупку Aera Pro обрабатывает Apple через App Store. Приложение узнаёт только, активна ли у вас Aera Pro, и не видит ваших платёжных данных. На оплату распространяется политика конфиденциальности Apple."]),
@@ -63,7 +63,7 @@ T = {
  "sections": [
   ("What the app stores", ["Wallets, transactions, categories, budgets, goals, debts, shopping lists, templates, attached receipt photos and settings. All of it is stored only on your device, in the app’s protected storage. It is available to Aera itself and to its widgets and Siri shortcuts on that device — and to no one else."]),
   ("What we collect", ["Nothing. Aera has no analytics, ads, tracking, crash reporting or third-party SDKs. The app does not connect to the internet, except for App Store purchases, which are handled by Apple."]),
-  ("Face ID and PIN", ["Face ID and Touch ID are handled by iOS: the app only receives a “confirmed” or “not confirmed” result and never sees biometric data. Your PIN is stored on the device as a hash, not in plain text."]),
+  ("Face ID and PIN", ["Face ID and Touch ID are handled by iOS: the app only receives a “confirmed” or “not confirmed” result and never sees biometric data. Your PIN is never stored in plain text: only a strong salted hash is kept on the device, in the protected iOS Keychain. It is not included in backups."]),
   ("Photos", ["Aera only receives the receipt photos you choose yourself in the system photo picker. They are stored inside the app and never sent anywhere."]),
   ("Notifications", ["Reminders and summaries are local notifications: they are created and shown on your device, with no push notification servers."]),
   ("Aera Pro purchases", ["Aera Pro subscriptions and purchases are processed by Apple through the App Store. The app only learns whether Aera Pro is active and never sees your payment details. Payments are covered by Apple’s privacy policy."]),
@@ -81,7 +81,7 @@ T = {
  "sections": [
   ("Qué datos guarda la app", ["Carteras, movimientos, categorías, presupuestos, metas, deudas, listas de compras, plantillas, fotos de tiques adjuntas y ajustes. Todo se guarda solo en tu dispositivo, en el almacenamiento protegido de la app. Solo tienen acceso Aera, sus widgets y sus atajos de Siri en ese dispositivo."]),
   ("Qué recopilamos", ["Nada. Aera no tiene analíticas, publicidad, seguimiento, informes de fallos ni SDK de terceros. La app no se conecta a internet, salvo para las compras en el App Store, que gestiona Apple."]),
-  ("Face ID y PIN", ["Face ID y Touch ID los gestiona iOS: la app solo recibe la respuesta «confirmado» o «no confirmado» y nunca ve datos biométricos. El PIN se guarda en el dispositivo como hash, no en texto plano."]),
+  ("Face ID y PIN", ["Face ID y Touch ID los gestiona iOS: la app solo recibe la respuesta «confirmado» o «no confirmado» y nunca ve datos biométricos. El PIN nunca se guarda en texto plano: en el dispositivo, en el llavero protegido de iOS, solo se conserva un hash robusto con sal. No se incluye en las copias de seguridad."]),
   ("Fotos", ["Aera solo recibe las fotos de tiques que tú eliges en el selector de fotos del sistema. Se guardan dentro de la app y no se envían a ningún sitio."]),
   ("Notificaciones", ["Los recordatorios y resúmenes son notificaciones locales: se crean y se muestran en tu dispositivo, sin servidores de notificaciones push."]),
   ("Compras de Aera Pro", ["Las suscripciones y compras de Aera Pro las procesa Apple a través del App Store. La app solo sabe si Aera Pro está activo y nunca ve tus datos de pago. Los pagos se rigen por la política de privacidad de Apple."]),
@@ -99,7 +99,7 @@ T = {
  "sections": [
   ("Quais dados o app guarda", ["Carteiras, transações, categorias, orçamentos, metas, dívidas, listas de compras, modelos, fotos de notas anexadas e ajustes. Tudo fica armazenado apenas no seu aparelho, no armazenamento protegido do app. Só o Aera, seus widgets e atalhos da Siri nesse aparelho têm acesso."]),
   ("O que coletamos", ["Nada. O Aera não tem análises, anúncios, rastreamento, relatórios de falhas nem SDKs de terceiros. O app não se conecta à internet, exceto para compras na App Store, que são processadas pela Apple."]),
-  ("Face ID e PIN", ["O Face ID e o Touch ID são processados pelo iOS: o app recebe apenas a resposta “confirmado” ou “não confirmado” e nunca vê dados biométricos. O PIN fica armazenado no aparelho como hash, não em texto simples."]),
+  ("Face ID e PIN", ["O Face ID e o Touch ID são processados pelo iOS: o app recebe apenas a resposta “confirmado” ou “não confirmado” e nunca vê dados biométricos. O PIN nunca é armazenado em texto simples: no aparelho, nas Chaves protegidas do iOS, fica apenas um hash robusto com salt. Ele não é incluído em backups."]),
   ("Fotos", ["O Aera recebe apenas as fotos de notas que você mesmo escolhe no seletor de fotos do sistema. Elas ficam dentro do app e não são enviadas para lugar nenhum."]),
   ("Notificações", ["Lembretes e resumos são notificações locais: são criados e exibidos no seu aparelho, sem servidores de notificações push."]),
   ("Compras do Aera Pro", ["Assinaturas e compras do Aera Pro são processadas pela Apple na App Store. O app só sabe se o Aera Pro está ativo e nunca vê seus dados de pagamento. Os pagamentos seguem a política de privacidade da Apple."]),
@@ -117,7 +117,7 @@ T = {
  "sections": [
   ("Welche Daten die App speichert", ["Konten, Buchungen, Kategorien, Budgets, Sparziele, Schulden, Einkaufslisten, Vorlagen, angehängte Fotos von Kassenbons und Einstellungen. All das wird nur auf deinem Gerät im geschützten Speicher der App abgelegt. Zugriff haben nur Aera selbst sowie ihre Widgets und Siri-Kurzbefehle auf diesem Gerät."]),
   ("Was wir erheben", ["Nichts. Aera enthält keine Analyse, keine Werbung, kein Tracking, keine Absturzberichte und keine SDKs von Drittanbietern. Die App verbindet sich nicht mit dem Internet – außer für Käufe im App Store, die Apple abwickelt."]),
-  ("Face ID und PIN", ["Face ID und Touch ID werden von iOS verarbeitet: Die App erhält nur die Antwort „bestätigt“ oder „nicht bestätigt“ und sieht niemals biometrische Daten. Deine PIN wird auf dem Gerät als Hash gespeichert, nicht im Klartext."]),
+  ("Face ID und PIN", ["Face ID und Touch ID werden von iOS verarbeitet: Die App erhält nur die Antwort „bestätigt“ oder „nicht bestätigt“ und sieht niemals biometrische Daten. Deine PIN wird nie im Klartext gespeichert: Auf dem Gerät liegt im geschützten iOS-Schlüsselbund nur ein starker, gesalzener Hash. Er ist nicht in Backups enthalten."]),
   ("Fotos", ["Aera erhält nur die Fotos von Kassenbons, die du selbst in der Fotoauswahl des Systems auswählst. Sie werden in der App gespeichert und nirgendwohin gesendet."]),
   ("Mitteilungen", ["Erinnerungen und Bilanzen sind lokale Mitteilungen: Sie werden auf deinem Gerät erstellt und angezeigt, ohne Push-Server."]),
   ("Käufe von Aera Pro", ["Abos und Käufe von Aera Pro wickelt Apple über den App Store ab. Die App erfährt nur, ob Aera Pro aktiv ist, und sieht niemals deine Zahlungsdaten. Für Zahlungen gilt die Datenschutzrichtlinie von Apple."]),
@@ -135,7 +135,7 @@ T = {
  "sections": [
   ("Données conservées par l’app", ["Comptes, opérations, catégories, budgets, objectifs, dettes, listes d’achats, modèles, photos de tickets jointes et réglages. Tout est stocké uniquement sur votre appareil, dans l’espace protégé de l’app. Seuls Aera, ses widgets et ses raccourcis Siri sur cet appareil y ont accès."]),
   ("Ce que nous collectons", ["Rien. Aera n’intègre ni analyse, ni publicité, ni suivi, ni rapport de plantage, ni SDK tiers. L’app ne se connecte pas à Internet, sauf pour les achats sur l’App Store, gérés par Apple."]),
-  ("Face ID et code PIN", ["Face ID et Touch ID sont gérés par iOS : l’app reçoit seulement la réponse « confirmé » ou « non confirmé » et ne voit jamais de données biométriques. Votre code PIN est stocké sur l’appareil sous forme de hachage, jamais en clair."]),
+  ("Face ID et code PIN", ["Face ID et Touch ID sont gérés par iOS : l’app reçoit seulement la réponse « confirmé » ou « non confirmé » et ne voit jamais de données biométriques. Votre code PIN n’est jamais stocké en clair : seul un hachage robuste et salé est conservé sur l’appareil, dans le trousseau iOS protégé. Il n’est pas inclus dans les sauvegardes."]),
   ("Photos", ["Aera reçoit uniquement les photos de tickets que vous choisissez vous-même dans le sélecteur de photos du système. Elles sont stockées dans l’app et ne sont envoyées nulle part."]),
   ("Notifications", ["Les rappels et bilans sont des notifications locales : ils sont créés et affichés sur votre appareil, sans serveur de notifications push."]),
   ("Achats Aera Pro", ["Les abonnements et achats Aera Pro sont traités par Apple via l’App Store. L’app sait seulement si Aera Pro est actif et ne voit jamais vos informations de paiement. Les paiements relèvent de la politique de confidentialité d’Apple."]),
@@ -153,7 +153,7 @@ T = {
  "sections": [
   ("Quali dati conserva l’app", ["Conti, movimenti, categorie, budget, obiettivi, debiti, liste della spesa, modelli, foto degli scontrini allegate e impostazioni. Tutto è salvato solo sul tuo dispositivo, nello spazio protetto dell’app. Vi accedono solo Aera, i suoi widget e i suoi comandi Siri su quel dispositivo."]),
   ("Cosa raccogliamo", ["Niente. Aera non contiene analisi, pubblicità, tracciamento, report sugli arresti anomali né SDK di terze parti. L’app non si collega a Internet, tranne che per gli acquisti sull’App Store, gestiti da Apple."]),
-  ("Face ID e PIN", ["Face ID e Touch ID sono gestiti da iOS: l’app riceve solo la risposta «confermato» o «non confermato» e non vede mai dati biometrici. Il PIN è salvato sul dispositivo come hash, non in chiaro."]),
+  ("Face ID e PIN", ["Face ID e Touch ID sono gestiti da iOS: l’app riceve solo la risposta «confermato» o «non confermato» e non vede mai dati biometrici. Il PIN non viene mai salvato in chiaro: sul dispositivo, nel portachiavi protetto di iOS, resta solo un hash robusto con salt. Non viene incluso nei backup."]),
   ("Foto", ["Aera riceve solo le foto degli scontrini che scegli tu nel selettore di foto del sistema. Restano nell’app e non vengono inviate da nessuna parte."]),
   ("Notifiche", ["Promemoria e riepiloghi sono notifiche locali: vengono create e mostrate sul tuo dispositivo, senza server di notifiche push."]),
   ("Acquisti di Aera Pro", ["Abbonamenti e acquisti di Aera Pro sono gestiti da Apple tramite l’App Store. L’app sa solo se Aera Pro è attivo e non vede mai i tuoi dati di pagamento. I pagamenti sono regolati dall’informativa sulla privacy di Apple."]),
@@ -171,7 +171,7 @@ T = {
  "sections": [
   ("アプリが保存するデータ", ["口座、取引、カテゴリ、予算、目標、貸し借り、買い物リスト、テンプレート、添付したレシートの写真、設定。これらはすべてあなたのデバイス上の、アプリの保護されたストレージにのみ保存されます。アクセスできるのは、そのデバイス上のAera本体とそのウィジェット、Siriショートカットだけです。"]),
   ("収集する情報", ["ありません。Aeraには分析、広告、トラッキング、クラッシュレポート、サードパーティのSDKは含まれていません。App Storeでの購入（Appleが処理）を除き、アプリはインターネットに接続しません。"]),
-  ("Face IDとPIN", ["Face IDとTouch IDはiOSが処理します。アプリが受け取るのは「確認済み」か「未確認」かという結果のみで、生体情報を見ることはありません。PINはデバイス上にハッシュとして保存され、平文では保存されません。"]),
+  ("Face IDとPIN", ["Face IDとTouch IDはiOSが処理します。アプリが受け取るのは「確認済み」か「未確認」かという結果のみで、生体情報を見ることはありません。PINが平文で保存されることはありません。デバイス上の保護されたiOSキーチェーンに、ソルト付きの強固なハッシュだけが保存され、バックアップには含まれません。"]),
   ("写真", ["Aeraが受け取るのは、システムの写真ピッカーであなたが選んだレシートの写真だけです。写真はアプリ内に保存され、どこにも送信されません。"]),
   ("通知", ["リマインダーとサマリーはローカル通知です。プッシュ通知サーバーを使わず、デバイス上で作成・表示されます。"]),
   ("Aera Proの購入", ["Aera Proのサブスクリプションと購入は、App Storeを通じてAppleが処理します。アプリが知るのはAera Proが有効かどうかだけで、支払い情報を見ることはありません。支払いにはAppleのプライバシーポリシーが適用されます。"]),

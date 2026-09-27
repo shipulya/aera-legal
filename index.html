@@ -65,7 +65,7 @@ a:hover { text-decoration: underline; }
 <p>Ничего. В Aera нет аналитики, рекламы, отслеживания, отчётов о сбоях и сторонних SDK. Приложение не подключается к интернету, кроме покупок через App Store, которые обрабатывает Apple.</p>
 </section>
 <section><h2>Face ID и PIN-код</h2>
-<p>Face ID и Touch ID обрабатывает iOS: приложение получает только ответ «подтверждено» или «нет» и никогда не видит биометрические данные. PIN-код хранится на устройстве в виде хеша, а не открытым текстом.</p>
+<p>Face ID и Touch ID обрабатывает iOS: приложение получает только ответ «подтверждено» или «нет» и никогда не видит биометрические данные. PIN-код не хранится в открытом виде: на устройстве, в защищённой Связке ключей iOS, лежит только его стойкий хеш с солью. В резервные копии он не попадает.</p>
 </section>
 <section><h2>Фотографии</h2>
 <p>Aera получает только те фото чеков, которые вы сами выберете в системном окне выбора. Они хранятся внутри приложения и никуда не отправляются.</p>
@@ -103,7 +103,7 @@ a:hover { text-decoration: underline; }
 <p>Nothing. Aera has no analytics, ads, tracking, crash reporting or third-party SDKs. The app does not connect to the internet, except for App Store purchases, which are handled by Apple.</p>
 </section>
 <section><h2>Face ID and PIN</h2>
-<p>Face ID and Touch ID are handled by iOS: the app only receives a “confirmed” or “not confirmed” result and never sees biometric data. Your PIN is stored on the device as a hash, not in plain text.</p>
+<p>Face ID and Touch ID are handled by iOS: the app only receives a “confirmed” or “not confirmed” result and never sees biometric data. Your PIN is never stored in plain text: only a strong salted hash is kept on the device, in the protected iOS Keychain. It is not included in backups.</p>
 </section>
 <section><h2>Photos</h2>
 <p>Aera only receives the receipt photos you choose yourself in the system photo picker. They are stored inside the app and never sent anywhere.</p>
@@ -141,7 +141,7 @@ a:hover { text-decoration: underline; }
 <p>Nada. Aera no tiene analíticas, publicidad, seguimiento, informes de fallos ni SDK de terceros. La app no se conecta a internet, salvo para las compras en el App Store, que gestiona Apple.</p>
 </section>
 <section><h2>Face ID y PIN</h2>
-<p>Face ID y Touch ID los gestiona iOS: la app solo recibe la respuesta «confirmado» o «no confirmado» y nunca ve datos biométricos. El PIN se guarda en el dispositivo como hash, no en texto plano.</p>
+<p>Face ID y Touch ID los gestiona iOS: la app solo recibe la respuesta «confirmado» o «no confirmado» y nunca ve datos biométricos. El PIN nunca se guarda en texto plano: en el dispositivo, en el llavero protegido de iOS, solo se conserva un hash robusto con sal. No se incluye en las copias de seguridad.</p>
 </section>
 <section><h2>Fotos</h2>
 <p>Aera solo recibe las fotos de tiques que tú eliges en el selector de fotos del sistema. Se guardan dentro de la app y no se envían a ningún sitio.</p>
@@ -179,7 +179,7 @@ a:hover { text-decoration: underline; }
 <p>Nada. O Aera não tem análises, anúncios, rastreamento, relatórios de falhas nem SDKs de terceiros. O app não se conecta à internet, exceto para compras na App Store, que são processadas pela Apple.</p>
 </section>
 <section><h2>Face ID e PIN</h2>
-<p>O Face ID e o Touch ID são processados pelo iOS: o app recebe apenas a resposta “confirmado” ou “não confirmado” e nunca vê dados biométricos. O PIN fica armazenado no aparelho como hash, não em texto simples.</p>
+<p>O Face ID e o Touch ID são processados pelo iOS: o app recebe apenas a resposta “confirmado” ou “não confirmado” e nunca vê dados biométricos. O PIN nunca é armazenado em texto simples: no aparelho, nas Chaves protegidas do iOS, fica apenas um hash robusto com salt. Ele não é incluído em backups.</p>
 </section>
 <section><h2>Fotos</h2>
 <p>O Aera recebe apenas as fotos de notas que você mesmo escolhe no seletor de fotos do sistema. Elas ficam dentro do app e não são enviadas para lugar nenhum.</p>
@@ -217,7 +217,7 @@ a:hover { text-decoration: underline; }
 <p>Nichts. Aera enthält keine Analyse, keine Werbung, kein Tracking, keine Absturzberichte und keine SDKs von Drittanbietern. Die App verbindet sich nicht mit dem Internet – außer für Käufe im App Store, die Apple abwickelt.</p>
 </section>
 <section><h2>Face ID und PIN</h2>
-<p>Face ID und Touch ID werden von iOS verarbeitet: Die App erhält nur die Antwort „bestätigt“ oder „nicht bestätigt“ und sieht niemals biometrische Daten. Deine PIN wird auf dem Gerät als Hash gespeichert, nicht im Klartext.</p>
+<p>Face ID und Touch ID werden von iOS verarbeitet: Die App erhält nur die Antwort „bestätigt“ oder „nicht bestätigt“ und sieht niemals biometrische Daten. Deine PIN wird nie im Klartext gespeichert: Auf dem Gerät liegt im geschützten iOS-Schlüsselbund nur ein starker, gesalzener Hash. Er ist nicht in Backups enthalten.</p>
 </section>
 <section><h2>Fotos</h2>
 <p>Aera erhält nur die Fotos von Kassenbons, die du selbst in der Fotoauswahl des Systems auswählst. Sie werden in der App gespeichert und nirgendwohin gesendet.</p>
@@ -255,7 +255,7 @@ a:hover { text-decoration: underline; }
 <p>Rien. Aera n’intègre ni analyse, ni publicité, ni suivi, ni rapport de plantage, ni SDK tiers. L’app ne se connecte pas à Internet, sauf pour les achats sur l’App Store, gérés par Apple.</p>
 </section>
 <section><h2>Face ID et code PIN</h2>
-<p>Face ID et Touch ID sont gérés par iOS : l’app reçoit seulement la réponse « confirmé » ou « non confirmé » et ne voit jamais de données biométriques. Votre code PIN est stocké sur l’appareil sous forme de hachage, jamais en clair.</p>
+<p>Face ID et Touch ID sont gérés par iOS : l’app reçoit seulement la réponse « confirmé » ou « non confirmé » et ne voit jamais de données biométriques. Votre code PIN n’est jamais stocké en clair : seul un hachage robuste et salé est conservé sur l’appareil, dans le trousseau iOS protégé. Il n’est pas inclus dans les sauvegardes.</p>
 </section>
 <section><h2>Photos</h2>
 <p>Aera reçoit uniquement les photos de tickets que vous choisissez vous-même dans le sélecteur de photos du système. Elles sont stockées dans l’app et ne sont envoyées nulle part.</p>
@@ -293,7 +293,7 @@ a:hover { text-decoration: underline; }
 <p>Niente. Aera non contiene analisi, pubblicità, tracciamento, report sugli arresti anomali né SDK di terze parti. L’app non si collega a Internet, tranne che per gli acquisti sull’App Store, gestiti da Apple.</p>
 </section>
 <section><h2>Face ID e PIN</h2>
-<p>Face ID e Touch ID sono gestiti da iOS: l’app riceve solo la risposta «confermato» o «non confermato» e non vede mai dati biometrici. Il PIN è salvato sul dispositivo come hash, non in chiaro.</p>
+<p>Face ID e Touch ID sono gestiti da iOS: l’app riceve solo la risposta «confermato» o «non confermato» e non vede mai dati biometrici. Il PIN non viene mai salvato in chiaro: sul dispositivo, nel portachiavi protetto di iOS, resta solo un hash robusto con salt. Non viene incluso nei backup.</p>
 </section>
 <section><h2>Foto</h2>
 <p>Aera riceve solo le foto degli scontrini che scegli tu nel selettore di foto del sistema. Restano nell’app e non vengono inviate da nessuna parte.</p>
@@ -331,7 +331,7 @@ a:hover { text-decoration: underline; }
 <p>ありません。Aeraには分析、広告、トラッキング、クラッシュレポート、サードパーティのSDKは含まれていません。App Storeでの購入（Appleが処理）を除き、アプリはインターネットに接続しません。</p>
 </section>
 <section><h2>Face IDとPIN</h2>
-<p>Face IDとTouch IDはiOSが処理します。アプリが受け取るのは「確認済み」か「未確認」かという結果のみで、生体情報を見ることはありません。PINはデバイス上にハッシュとして保存され、平文では保存されません。</p>
+<p>Face IDとTouch IDはiOSが処理します。アプリが受け取るのは「確認済み」か「未確認」かという結果のみで、生体情報を見ることはありません。PINが平文で保存されることはありません。デバイス上の保護されたiOSキーチェーンに、ソルト付きの強固なハッシュだけが保存され、バックアップには含まれません。</p>
 </section>
 <section><h2>写真</h2>
 <p>Aeraが受け取るのは、システムの写真ピッカーであなたが選んだレシートの写真だけです。写真はアプリ内に保存され、どこにも送信されません。</p>
